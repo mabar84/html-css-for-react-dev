@@ -13,10 +13,12 @@ function App() {
         <div className="phone-screen">
           <StyledCard>
             <img src={cardImage} alt="image" />
-
             <div className="wrapper">
               <h2>Headline</h2>
-              <p>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</p>
+              <p>
+                Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit
+                molestie ornare in venen.
+              </p>
               <StyledButton>See more</StyledButton>
               <StyledButton>Save</StyledButton>
             </div>
@@ -67,6 +69,7 @@ const StyledPhoneBody = styled.div`
     bottom: 10px;
     z-index: 11;
     left: 50%;
+    padding: 0;
     transform: translateX(-50%);
   }
 `;
@@ -107,6 +110,7 @@ const StyledCard = styled.div`
 
 const StyledButton = styled.button`
   min-width: 86px;
+  margin-right: 20px;
   color: #fff;
   font-family: Inter;
   font-size: 10px;
@@ -118,8 +122,9 @@ const StyledButton = styled.button`
   border: 2px solid #4e71fe;
   transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
-  &:last-of-type {
-    margin-left: 20px;
+
+  &:last-child {
+    margin-right: 0;
     color: #4e71fe;
     background-color: #fff;
     &:hover {

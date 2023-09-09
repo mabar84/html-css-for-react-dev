@@ -1,14 +1,10 @@
 {
-    
-        "editor.quickSuggestions": {
-          "strings": true
-        
-      },
-      "emmet.includeLanguages": {
-        "vue-html": "html", "javascript": "javascriptreact"
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": ""
     },
-    "emmet.preferences": {
-        "emmet.triggerExpansionOnTab": true,
-        "emmet.showExpandedAbbreviation": "never"
-    }
+    "emmet.optimizeStylesheetParsing": false,
+    "emmet.showAbbreviationSuggestions": true,
+    "emmet.triggerExpansionOnTab": true,
+    "files.autoSave": "onWindowChange"
 }
