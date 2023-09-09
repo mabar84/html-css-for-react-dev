@@ -1,0 +1,14 @@
+{
+    
+        "editor.quickSuggestions": {
+          "strings": true
+        
+      },
+      "emmet.includeLanguages": {
+        "vue-html": "html", "javascript": "javascriptreact"
+    },
+    "emmet.preferences": {
+        "emmet.triggerExpansionOnTab": true,
+        "emmet.showExpandedAbbreviation": "never"
+    }
+}
