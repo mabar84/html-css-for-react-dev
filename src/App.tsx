@@ -7,4 +7,8 @@ function App() {
 
 export default App;
 
-const StyledButton = styled.button``;
+const StyledButton = styled.button`
+  font-size: 16px;
+  border-radius: 50%;
+  line-height: 16px;
+`;
