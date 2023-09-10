@@ -10,8 +10,7 @@ export const StyledCard = styled.div`
   gap: 20px;
   border-radius: 15px;
   background: #fff;
-  box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.1);
-  background-image: url(cardImage);
+  box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
   &:hover {
     animation: ${TextAnimation} 1000ms ease-in-out forwards;
   }
@@ -20,7 +19,6 @@ export const StyledCard = styled.div`
     h2 {
       margin: 0 0 20px;
       color: #000;
-      font-family: Inter;
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
@@ -28,8 +26,8 @@ export const StyledCard = styled.div`
     }
     p {
       margin: 0 0 20px;
+      padding-right: 8px;
       color: #abb3ba;
-      font-family: Inter;
       font-size: 12px;
       font-style: normal;
       font-weight: 500;

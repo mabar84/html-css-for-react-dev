@@ -11,6 +11,7 @@ export const StyledPhoneBody = styled.div`
   display: flex;
   flex-direction: column;
   border: 3px solid #000;
+  background-color: #fff;
 
   .phone-top {
     height: 45px;
