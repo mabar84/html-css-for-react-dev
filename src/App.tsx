@@ -6,11 +6,21 @@ import {StyledCard} from "./components/Card.styled";
 
 function App() {
 
+
+    let forGirlsB = false
+    const clickPhoneButton = () => {
+
+
+        forGirlsB = !forGirlsB
+
+    }
+
     return (
         <div className="App">
-            <h1 style={{textAlign: 'center', paddingRight: '10px', paddingLeft: '10px'}}>Learning Styled Component</h1>
-            <StyledPhoneBody>
-                <div className="phone-top"></div>
+            <StyledPhoneBody forGirls={forGirlsB}>
+                <div className="phone-top">
+                    <div className="phone-speaker"></div>
+                </div>
                 <div className="phone-screen">
                     <StyledCard>
                         <img src={cardImage} alt="image"/>
@@ -21,12 +31,13 @@ function App() {
                                 molestie ornare in venen.
                             </p>
                             <StyledButton backgroundColor={'sandybrown'}>See more</StyledButton>
-                            <StyledButton backgroundColor={'yellow'}>Save</StyledButton>
+                            <StyledButton hasShadow backgroundColor={'yellow'}>Save</StyledButton>
                         </div>
                     </StyledCard>
                 </div>
-                <div className="phone-bottom"></div>
-                <div className="phone-button"></div>
+                <div className="phone-bottom">
+                    <div onClick={clickPhoneButton} className="phone-button"></div>
+                </div>
             </StyledPhoneBody>
         </div>
     );

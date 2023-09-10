@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
+import {ScaleAnimation} from "../styles/animations/ScaleAnimation";
 
 type StyledButtonType = {
-    // color?: string
+    hasShadow?: boolean
     backgroundColor?: string
 }
 
@@ -36,4 +37,16 @@ export const StyledButton = styled.button<StyledButtonType>`
     color: #4e71fe;
     background-color: #fff;
   }
+
+  ${props => props.hasShadow && css`
+    box-shadow: 5px 5px 5px bisque;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  `}
+
+
+
 `;

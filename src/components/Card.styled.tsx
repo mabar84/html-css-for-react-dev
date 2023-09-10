@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { TextAnimation } from "../styles/animations/TextAnimation";
+import {ScaleAnimation} from "../styles/animations/ScaleAnimation";
+import {myTheme} from "../styles/Theme.styled";
 
 export const StyledCard = styled.div`
   width: 300px;
@@ -11,11 +12,14 @@ export const StyledCard = styled.div`
   border-radius: 15px;
   background: #fff;
   box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
+
   &:hover {
-    animation: ${TextAnimation} 1000ms ease-in-out forwards;
+    animation: ${ScaleAnimation} 1000ms ease-in-out forwards;
   }
+
   .wrapper {
     padding: 0 10px 12px;
+
     h2 {
       margin: 0 0 20px;
       color: #000;
@@ -24,6 +28,7 @@ export const StyledCard = styled.div`
       font-weight: 700;
       line-height: normal;
     }
+
     p {
       margin: 0 0 20px;
       padding-right: 8px;
@@ -34,7 +39,8 @@ export const StyledCard = styled.div`
       line-height: 20px;
     }
   }
-  @media (max-width: 450px) {
-    background-color: red;
+
+  @media ${myTheme.media.mobile} {
+    background-color: skyblue;
   }
 `;
