@@ -6,7 +6,6 @@ type StyledPhoneBodyPropsType = {
     forGirls: boolean
 }
 
-
 export const StyledPhoneBody = styled.div<StyledPhoneBodyPropsType>`
   box-sizing: border-box;
   width: 381px;
@@ -18,7 +17,7 @@ export const StyledPhoneBody = styled.div<StyledPhoneBodyPropsType>`
   flex-direction: column;
   border: 3px solid ${myTheme.colors.phoneBody.boys};
   background-color: #fff;
-
+ 
   ${props => props.forGirls && css`
     border: 3px solid ${myTheme.colors.phoneBody.girls};
   `}

@@ -10,10 +10,8 @@ export const myTheme = {
             boys: 'black',
             girls: 'pink'
         },
-
-
     },
     media: {
-        mobile: "screen and (max-width: 450px)"
+        mobile: 'screen and (max-width: 450px)'
     }
 }

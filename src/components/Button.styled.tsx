@@ -10,7 +10,6 @@ export const StyledButton = styled.button<StyledButtonType>`
   min-width: 86px;
   margin-right: 20px;
   color: #fff;
-  //font-family: Inter;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;

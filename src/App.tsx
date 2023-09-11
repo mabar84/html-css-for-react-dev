@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import cardImage from "./img/desert.png";
 import {StyledButton} from "./components/Button.styled";
 import {StyledPhoneBody} from "./components/PhoneBody.styled";
@@ -6,18 +6,14 @@ import {StyledCard} from "./components/Card.styled";
 
 function App() {
 
-
-    let forGirlsB = false
+    const [forGirls, setForGirls] = useState(false)
     const clickPhoneButton = () => {
-
-
-        forGirlsB = !forGirlsB
-
+        setForGirls((prev) => !prev)
     }
 
     return (
         <div className="App">
-            <StyledPhoneBody forGirls={forGirlsB}>
+            <StyledPhoneBody forGirls={forGirls}>
                 <div className="phone-top">
                     <div className="phone-speaker"></div>
                 </div>
@@ -27,7 +23,7 @@ function App() {
                         <div className="wrapper">
                             <h2>Headline</h2>
                             <p>
-                                Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit
+                                Faucibus! Faucibus. Sit sit sapien sit tempusrisu ut. Sit
                                 molestie ornare in venen.
                             </p>
                             <StyledButton backgroundColor={'sandybrown'}>See more</StyledButton>
