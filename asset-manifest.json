@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/html-css-for-react-dev/static/css/main.31d6cfe0.css",
+    "main.js": "/html-css-for-react-dev/static/js/main.5d5c044d.js",
+    "static/js/787.fb73d857.chunk.js": "/html-css-for-react-dev/static/js/787.fb73d857.chunk.js",
+    "static/media/desert.png": "/html-css-for-react-dev/static/media/desert.c0982ff6ff7d2967cd34.png",
+    "index.html": "/html-css-for-react-dev/index.html",
+    "main.5d5c044d.js.map": "/html-css-for-react-dev/static/js/main.5d5c044d.js.map",
+    "787.fb73d857.chunk.js.map": "/html-css-for-react-dev/static/js/787.fb73d857.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.5d5c044d.js"
+  ]
+}
