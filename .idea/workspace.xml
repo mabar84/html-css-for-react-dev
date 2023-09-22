@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06268bf6-13d0-465f-bbd5-6534820ad39c" name="Changes" comment="text edited for testing of deplot">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.styled.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.styled.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PhoneBody.styled.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhoneBody.styled.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="06268bf6-13d0-465f-bbd5-6534820ad39c" name="Changes" comment="check git after vs code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +68,7 @@
       <workItem from="1694426672127" duration="4097000" />
       <workItem from="1694514712917" duration="628000" />
       <workItem from="1694522759248" duration="1257000" />
+      <workItem from="1695409819926" duration="204000" />
     </task>
     <task id="LOCAL-00001" summary="text edited for testing of deplot">
       <created>1694433128545</created>
@@ -81,7 +77,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694433128545</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="check git after vs code">
+      <created>1695409945692</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695409945692</updated>
+    </task>
+    <task id="LOCAL-00003" summary="check git after vs code">
+      <created>1695410017861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695410017861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +110,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="text edited for testing of deplot" />
-    <option name="LAST_COMMIT_MESSAGE" value="text edited for testing of deplot" />
+    <MESSAGE value="check git after vs code" />
+    <option name="LAST_COMMIT_MESSAGE" value="check git after vs code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
