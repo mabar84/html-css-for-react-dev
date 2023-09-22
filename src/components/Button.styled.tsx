@@ -1,10 +1,9 @@
-import styled, {css} from "styled-components";
-import {ScaleAnimation} from "../styles/animations/ScaleAnimation";
+import styled, { css } from "styled-components";
 
 type StyledButtonType = {
-    hasShadow?: boolean
-    backgroundColor?: string
-}
+  $has_shadow?: boolean;
+  background_color?: string;
+};
 
 export const StyledButton = styled.button<StyledButtonType>`
   min-width: 86px;
@@ -16,7 +15,7 @@ export const StyledButton = styled.button<StyledButtonType>`
   line-height: 20px;
   border-radius: 5px;
   //background-color: #4e71fe;
-  background-color: ${props => props.backgroundColor || '#4e71fe'};
+  background-color: ${(props) => props.background_color || "#4e71fe"};
   border: 2px solid #4e71fe;
   transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
@@ -37,15 +36,14 @@ export const StyledButton = styled.button<StyledButtonType>`
     background-color: #fff;
   }
 
-  ${props => props.hasShadow && css`
-    box-shadow: 5px 5px 5px bisque;
-    transition: transform 1s;
+  ${(props) =>
+    props.$has_shadow &&
+    css`
+      box-shadow: 5px 5px 5px bisque;
+      transition: transform 1s;
 
-    &:hover {
-      transform: scale(1.2);
-    }
-  `}
-
-
-
+      &:hover {
+        transform: scale(1.2);
+      }
+    `}
 `;

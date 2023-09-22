@@ -1,10 +1,10 @@
-import styled, {css} from "styled-components";
-import {myTheme} from "../styles/Theme.styled";
+import styled, { css } from "styled-components";
+import { myTheme } from "../styles/Theme.styled";
 import React from "react";
 
 type StyledPhoneBodyPropsType = {
-    forGirls: boolean
-}
+  $for_girls: boolean;
+};
 
 export const StyledPhoneBody = styled.div<StyledPhoneBodyPropsType>`
   box-sizing: border-box;
@@ -17,18 +17,25 @@ export const StyledPhoneBody = styled.div<StyledPhoneBodyPropsType>`
   flex-direction: column;
   border: 3px solid ${myTheme.colors.phoneBody.boys};
   background-color: #fff;
- 
-  ${props => props.forGirls && css`
-    border: 3px solid ${myTheme.colors.phoneBody.girls};
-  `}
+
+  ${(props) =>
+    props.$for_girls
+      ? css`
+          border: 3px solid ${myTheme.colors.phoneBody.girls};
+        `
+      : null}
+
   .phone-top {
     height: 45px;
     background-color: ${myTheme.colors.phoneBody.boys};
     position: relative;
 
-    ${props => props.forGirls && css`
-      background-color: ${myTheme.colors.phoneBody.girls};
-    `}
+    ${(props) =>
+      props.$for_girls
+        ? css`
+            background-color: ${myTheme.colors.phoneBody.girls};
+          `
+        : null}
     .phone-speaker {
       width: 100px;
       height: 6px;
@@ -55,10 +62,12 @@ export const StyledPhoneBody = styled.div<StyledPhoneBodyPropsType>`
     background-color: ${myTheme.colors.phoneBody.boys};
     position: relative;
 
-    ${props => props.forGirls && css`
-      background-color: ${myTheme.colors.phoneBody.girls};
-    `}
-
+    ${(props) =>
+      props.$for_girls
+        ? css`
+            background-color: ${myTheme.colors.phoneBody.girls};
+          `
+        : null}
   }
 
   .phone-button {
@@ -80,8 +89,11 @@ export const StyledPhoneBody = styled.div<StyledPhoneBodyPropsType>`
     }
 
     &:hover {
-      background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(195, 41, 72, 1) 100%);
-
+      background: radial-gradient(
+        circle,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(195, 41, 72, 1) 100%
+      );
     }
   }
 `;
